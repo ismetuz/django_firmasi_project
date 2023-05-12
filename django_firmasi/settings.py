@@ -126,6 +126,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #TODO Anasayfa' yı getir
 #TODO Hakkımızda, İletişim Gibi sayfalar için View oluştur
+#TODO Django makemigrations & migrate yap
 #TODO DTL Base Yapışkanı Oluştur.
 #TODO Anasayfadaki Karışıklıktan Kurtul.
 #TODO HTML Dosyaları oluştur

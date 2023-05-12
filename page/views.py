@@ -16,3 +16,7 @@ def about_us_view(request):
 def contact_us_view(request):
     context = dict()
     return render(request, 'page/contact_us.html', context)
+
+def visions_view(request):
+    context = dict()
+    return render(request, 'page/vision.html', context)

@@ -26,4 +26,5 @@ urlpatterns = [
     path('home/', views.index_view),
     path('hakkimizda/', views.about_us_view),
     path('iletisim/', views.contact_us_view), 
+    path('vizyonumuz/', views.visions_view),
 ]
