@@ -124,13 +124,13 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#TODO Anasayfa' yı getir
-#TODO Hakkımızda, İletişim Gibi sayfalar için View oluştur
-#TODO Django makemigrations & migrate yap
-#TODO DTL Base Yapışkanı Oluştur.
-#TODO Anasayfadaki Karışıklıktan Kurtul.
-#TODO HTML Dosyaları oluştur
-#TODO DRY
-#TODO App için urls.py oluştur
+#DONE Anasayfa' yı getir
+#DONE Hakkımızda, İletişim Gibi sayfalar için View oluştur
+#DONE Django makemigrations & migrate yap
+#DONE DTL Base Yapışkanı Oluştur.
+#DONE Anasayfadaki Karışıklıktan Kurtul.
+#DONE HTML Dosyaları oluştur
+#DONE DRY
+#DONE App için urls.py oluştur
 #TODO Statik Dosyaları Çalıştır
 #TODO Sayfaları Fake DB içerisinde tutup slug ile çağırmaya çalışarlım

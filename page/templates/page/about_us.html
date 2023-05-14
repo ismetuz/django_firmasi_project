@@ -1,51 +1,50 @@
 {% extends 'core/base.html' %}
-{% block content %}
+
+{% block title %} {{ page_title }} {% endblock title %}
+
+{% block container-fluid %}
+
 <div class="container-fluid mb-4">
-    <!-- Hero Content -->
-    <div class="row bg-dark p-4 border-top border-bottom">
-      <div class="col-sm-8 offset-sm-2">
-        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-          <h2 class="text-center display-1">Hakkımızda</h2>
-          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab libero inventore
-            ducimus, ex eligendi cumque adipisci, quas itaque, quasi quam id laboriosam nulla! Esse assumenda doloribus
-            autem delectus? Illum?</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
+  <!-- Hero Content -->
+  {% include 'page/components/hero_components.html' with hero_title=page_title %}
+</div>
+{% endblock container-fluid %}
+
+
+{% block container %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
       <h2 class="text-center">
         Vizyonumuz
       </h2>
       <hr>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At provident ea possimus ratione dicta
         exercitationem deserunt tempore, id obcaecati ipsa?</p>
-        <ul>
-          <li>Lorem, ipsum.</li>
-          <li>Laudantium, dicta.</li>
-          <li>Sapiente, nobis?</li>
-          <li>Repudiandae, nobis!</li>
-          <li>Ipsum, quia!</li>
-        </ul>
-      </div>
-      <div class="col-sm-12">
-        <h2 class="text-center">
-          Misyonumuz
-        </h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At provident ea possimus ratione dicta
-          exercitationem deserunt tempore, id obcaecati ipsa?</p>
-          <ul>
-            <li>Lorem, ipsum.</li>
-            <li>Laudantium, dicta.</li>
-            <li>Sapiente, nobis?</li>
-            <li>Repudiandae, nobis!</li>
-            <li>Ipsum, quia!</li>
-          </ul>
-        </div>
+      <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Laudantium, dicta.</li>
+        <li>Sapiente, nobis?</li>
+        <li>Repudiandae, nobis!</li>
+        <li>Ipsum, quia!</li>
+      </ul>
+    </div>
+    <div class="col-sm-12">
+      <h2 class="text-center">
+        Misyonumuz
+      </h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At provident ea possimus ratione dicta
+        exercitationem deserunt tempore, id obcaecati ipsa?</p>
+      <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Laudantium, dicta.</li>
+        <li>Sapiente, nobis?</li>
+        <li>Repudiandae, nobis!</li>
+        <li>Ipsum, quia!</li>
+      </ul>
     </div>
   </div>
-  <!-- Hero Content END-->
-{% endblock %}
+</div>
+<!-- Hero Content END-->
+{% endblock container%}

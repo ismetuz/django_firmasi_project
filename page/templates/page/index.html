@@ -1,42 +1,12 @@
 {% extends 'core/base.html' %}
-{% block content %}
+{% block title %} {{ page_title }} {% endblock title %}
 
-<!-- Carousel -->
-<div id="carouselExampleIndicators" class="carousel slide d-none d-sm-block">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-      aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-      aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-      aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-      aria-label="Slide 4"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://picsum.photos/id/437/1200/300" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/id/337/1200/300" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/id/257/1200/300" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/id/99/1200/300" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!-- Carousel END -->
+
+{% block container %}
+
+<!--Özelliklke wtih kullanmak için fake_db_carousel i carousel olarak değiştirdik-->
+{% include 'page/components/home_carousel_components.html' with CAROUSEL=FAKE_DB_CAROUSEL %}
+
 <div class="container-fluid mb-4">
   <!-- Hero Content -->
   <div class="row bg-dark p-4 border-top border-bottom">
@@ -49,21 +19,6 @@
     </div>
   </div>
   <!-- Hero Content END-->
-  <!-- About US -->
-  <div class="row bg-dark text-light text-center border-top border-bottom">
-    <div class="col-sm-6 ms-0 ps-0">
-      <img src="https://picsum.photos/id/88/600/250" alt="" class="w-100">
-    </div>
-    <div class="col-sm-6 d-flex justify-content-center align-items-center">
-      <div>
-        <h2 class="display-2"> Hakkımızda </h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Dicta neque minima asperiores reiciendis.</p>
-        <p>Voluptatum at obcaecati atque mollitia.</p>
-      </div>
-    </div>
-  </div>
-  <!-- About US END -->
 </div>
 <div class="container">
   <!-- Product -->
@@ -107,32 +62,7 @@
     </div>
   </div>
 </div>
-<div class="col-12 text-center">
-  <h2> Projelerimiz</h2>
-  <hr>
+<hr>
 </div>
-<!-- Project-->
 
-<div class="container-fluid">
-  <div class="row my-4">
-    <div class="col-sm col-6 md-1"><img src="https://picsum.photos/id/51/400/250" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 md-1"><img src="https://picsum.photos/id/52/400/250" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 md-1"><img src="https://picsum.photos/id/55/400/250" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 md-1"><img src="https://picsum.photos/id/54/400/250" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 md-1"><img src="https://picsum.photos/id/53/400/250" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 md-1"><img src="https://picsum.photos/id/56/400/250" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 md-1"><img src="https://picsum.photos/id/57/400/250" alt="" class="w-100 img-thumbnail">
-    </div>
-    <div class="col-sm col-6 md-1"><img src="https://picsum.photos/id/58/400/250" alt="" class="w-100 img-thumbnail">
-    </div>
-  </div>
-</div>
-<!-- Project End-->
-
-{% endblock %}
+{% endblock container %}

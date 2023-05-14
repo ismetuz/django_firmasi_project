@@ -15,16 +15,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from page import views
+from django.urls import path, include
 
 
 urlpatterns = [
+    path('', include('page.urls'), ),  #page içindeki url.py dosyasından url alıyoruz artık
     path('admin/', admin.site.urls),
-    path('', views.index_view),
-    path('anasayfa/', views.index_view),
-    path('home/', views.index_view),
-    path('hakkimizda/', views.about_us_view),
-    path('iletisim/', views.contact_us_view), 
-    path('vizyonumuz/', views.visions_view),
 ]
